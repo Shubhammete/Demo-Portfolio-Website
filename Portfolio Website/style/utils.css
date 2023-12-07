@@ -1,6 +1,7 @@
 .btn{
     /* font styles */
     font-weight: 600;
+    text-decoration: none;
     letter-spacing: -0.05em;
     /* color styles */
     background-color: var(--clr-rose);

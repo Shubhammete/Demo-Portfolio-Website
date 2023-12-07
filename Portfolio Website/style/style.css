@@ -15,7 +15,7 @@
     --size-base: 1rem;
     --size-lg: 1.125rem;
     --size-xl: 1.25rem;
-    --size-2x1: 1.5rem;
+    --size-2xl: 1.5rem;
     --size-3xl: 1.875rem;
     --size-4xl: 2.25rem;
     --size-5xl: 3rem;
@@ -26,11 +26,39 @@
     --size-10xl: 10rem;
 }
 
-
+/* media queries template 
+    min-width means it screen must be at least --px wide to apply these media queries
+*/
+/*xs*/
+@media (min-width: 475px){
+    
+}
+/*sm*/
+@media (min-width: 640px){
+    
+}
+/*md*/
+@media (min-width: 768px){
+    
+}
+/*lg*/
+@media (min-width: 1024px){
+    
+    
+}
+/*xl*/
+@media (min-width: 1280px){
+    
+}
+/*2xl*/
+@media (min-width: 1536px){
+    
+}
 
 
 *{
     margin:0;
+    padding: 0;
     /*line height here takes font-size of element and adds 0.5rem to it so it is dynamic*/
     line-height: calc(1em + 0.5rem);
 }
@@ -61,7 +89,6 @@ button{
     border: none;
     background: none;
     cursor: pointer;
-    text-decoration: none;
     /*inherit color from body element*/
     color: inherit;
 }
