@@ -1,0 +1,57 @@
+:root{
+    --clr-dark:#070a13;
+    --clr-light:#f1f5f9;
+    --clr-rose:#e11d48;
+    --clr-indigo:#4f46e5;
+    --clr-slate-400:#94a3b8;
+    --clr-slate-600:#475569;
+    --clr-slate-800:#1e293b;
+}
+
+
+
+*{
+    margin:0;
+    /*line height here takes font-size of element and adds 0.5rem to it so it is dynamic*/
+    line-height: calc(1em + 0.5rem);
+}
+
+html{
+    /* for smooth scroll */
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
+}
+
+
+img,picture,video,canvas,svg{
+    /*We use them as block so keep them block by default and user cannot select them*/
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+/* removing button default props to design it*/
+button{
+    display: inline-block;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    /*inherit color from body element*/
+    color: inherit;
+}
+
+
+a{
+    color: var(--clr-rose);
+}
+
+strong{
+    color: var(--clr-indigo);
+}
